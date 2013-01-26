@@ -1,5 +1,8 @@
 # Spiel
 
+[![Build Status](https://api.travis-ci.org/JordiPolo/spiel.png)](http://travis-ci.org/JordiPolo/spiel)
+[![Dependency Status](https://gemnasium.com/JordiPolo/spiel.png)](https://gemnasium.com/JordiPolo/spiel)
+
 Spiel has helper methods and classes to make your code clean.
 The main concepts come from Scala and Haskell and other languages which
 has embraced the functional paradigm in different degrees
