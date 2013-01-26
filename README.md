@@ -7,6 +7,7 @@ has embraced the functional paradigm in different degrees
 It contains very lightweight solutions with no extra dependencies on
 other gems.
 
+Supports Ruby 1.9.2 and up
 
 ## Installation
 
