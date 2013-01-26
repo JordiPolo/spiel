@@ -1,5 +1,2 @@
-require "spiel/version"
-
-module Spiel
-  # Your code goes here...
-end
+require 'spiel/version'
+require 'spiel/maybe'

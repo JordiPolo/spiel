@@ -41,7 +41,7 @@ You can check for nil on each step:
  user = User.find_by_name(name)
  parent &&= user.parent
  card &&= parent.credit_card(:main)
- balance = card.balance(:credit)
+ balance &&= card.balance(:credit)
 ```
 
 But your buggy first version read almost like English and now this looks so
@@ -49,8 +49,7 @@ much .... like C.
 
 You can also use ActiveSupport and its try method: 
 ```Ruby
- User.find_by_name(name).try(:parent).try(:credit_card,
-:main).try(:balance, :credit)
+ User.find_by_name(name).try(:parent).try(:credit_card, :main).try(:balance, :credit)
 ```
 
 That was long! And it kind of repetitive and, what is going on with
@@ -78,4 +77,5 @@ broken
 ## Contributing
 
 1. Fork it
-2. Send a pull request
+2. Do your changes, the specs pass
+3. Send a pull request
